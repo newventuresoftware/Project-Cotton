@@ -4,16 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Fclp;
+using NewVentureSoftware.Cotton.Engine;
 
 namespace Cotton.CLI
 {
     class Program
     {
-        public static ApplicationOptions ApplicationOptions { get; private set; }
+        private static ApplicationOptions ApplicationOptions { get; set; }
 
         static void Main(string[] args)
         {
             SetUpCommandLineParser(args);
+
+            var page = PageDownloadEngine.DownloadPage("http://www.google.bg/");
         }
 
         private static void SetUpCommandLineParser(string[] args)
