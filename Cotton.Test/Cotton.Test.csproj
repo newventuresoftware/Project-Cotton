@@ -6,8 +6,8 @@
     <ProjectGuid>{D03BB630-BA0C-46F0-9670-CDF48A4AE6A3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cotton.Test</RootNamespace>
-    <AssemblyName>Cotton.Test</AssemblyName>
+    <RootNamespace>NewVentureSoftware.Cotton.Test</RootNamespace>
+    <AssemblyName>NewVentureSoftware.Cotton.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -52,12 +52,6 @@
   <ItemGroup>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Cotton.Engine\Cotton.Engine.csproj">
-      <Project>{279f613e-30be-4ea7-b3f4-55380f33fd31}</Project>
-      <Name>Cotton.Engine</Name>
-    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

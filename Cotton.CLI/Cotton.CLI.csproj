@@ -7,7 +7,7 @@
     <ProjectGuid>{E2082694-8BA0-4289-BBD4-86870AA43EE7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cotton.CLI</RootNamespace>
+    <RootNamespace>NewVentureSoftware.Cotton.CLI</RootNamespace>
     <AssemblyName>Cotton</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -59,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cotton.Engine\Cotton.Engine.csproj">
-      <Project>{279f613e-30be-4ea7-b3f4-55380f33fd31}</Project>
+      <Project>{60af1c5c-94b2-41a5-aa13-7e8cda2c1fac}</Project>
       <Name>Cotton.Engine</Name>
     </ProjectReference>
   </ItemGroup>

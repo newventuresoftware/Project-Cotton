@@ -1,6 +1,7 @@
 ﻿using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -13,6 +14,25 @@ namespace NewVentureSoftware.Cotton.Engine
         private PageDownloadEngine()
         {
 
+        }
+
+        public static IList<PageData> DownloadPagesFromFile(string pathToFile)
+        {
+            var urls = File.ReadAllLines(pathToFile);
+
+            return DownloadPages(urls);
+        }
+
+        public static IList<PageData> DownloadPages(IEnumerable<string> pagesToDownload)
+        {
+            var pageData = new List<PageData>();
+
+            foreach (var url in pagesToDownload)
+            {
+                pageData.Add(DownloadPage(url));
+            }
+
+            return pageData;
         }
 
         public static PageData DownloadPage(string pageToDownload)

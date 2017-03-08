@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cotton.Engine", "Cotton.Engine\Cotton.Engine.csproj", "{279F613E-30BE-4EA7-B3F4-55380F33FD31}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cotton.CLI", "Cotton.CLI\Cotton.CLI.csproj", "{E2082694-8BA0-4289-BBD4-86870AA43EE7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cotton.Test", "Cotton.Test\Cotton.Test.csproj", "{D03BB630-BA0C-46F0-9670-CDF48A4AE6A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cotton.Engine", "Cotton.Engine\Cotton.Engine.csproj", "{60AF1C5C-94B2-41A5-AA13-7E8CDA2C1FAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{279F613E-30BE-4EA7-B3F4-55380F33FD31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{279F613E-30BE-4EA7-B3F4-55380F33FD31}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{279F613E-30BE-4EA7-B3F4-55380F33FD31}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{279F613E-30BE-4EA7-B3F4-55380F33FD31}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E2082694-8BA0-4289-BBD4-86870AA43EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E2082694-8BA0-4289-BBD4-86870AA43EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2082694-8BA0-4289-BBD4-86870AA43EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{D03BB630-BA0C-46F0-9670-CDF48A4AE6A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D03BB630-BA0C-46F0-9670-CDF48A4AE6A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D03BB630-BA0C-46F0-9670-CDF48A4AE6A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60AF1C5C-94B2-41A5-AA13-7E8CDA2C1FAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60AF1C5C-94B2-41A5-AA13-7E8CDA2C1FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60AF1C5C-94B2-41A5-AA13-7E8CDA2C1FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60AF1C5C-94B2-41A5-AA13-7E8CDA2C1FAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

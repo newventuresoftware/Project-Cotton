@@ -15,8 +15,6 @@ namespace Cotton.CLI
         static void Main(string[] args)
         {
             SetUpCommandLineParser(args);
-
-            var page = PageDownloadEngine.DownloadPage("http://www.google.bg/");
         }
 
         private static void SetUpCommandLineParser(string[] args)
