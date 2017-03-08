@@ -1,7 +1,10 @@
 ﻿using System;
 
-public enum Mode
+namespace Cotton.CLI
 {
-    Crawl,
-    Compare
+    public enum Mode
+    {
+        Crawl,
+        Compare
+    }
 }

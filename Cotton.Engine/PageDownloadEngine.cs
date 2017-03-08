@@ -9,13 +9,8 @@ using System.Threading.Tasks;
 
 namespace NewVentureSoftware.Cotton.Engine
 {
-    public sealed class PageDownloadEngine
+    public static class PageDownloadEngine
     {
-        private PageDownloadEngine()
-        {
-
-        }
-
         public static IList<PageData> DownloadPagesFromFile(string pathToFile, Action<string> progressCallback = null)
         {
             var urls = File.ReadAllLines(pathToFile);

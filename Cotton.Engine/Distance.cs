@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class Distance
+    public static class Distance
     {
         public static double Levenshtein(string source, string target)
         {
