@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Distance.cs" />
     <Compile Include="PageData.cs" />
     <Compile Include="PageDownloadEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
