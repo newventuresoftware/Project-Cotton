@@ -8,10 +8,11 @@ namespace Cotton.CLI
 {
     public class ApplicationOptions
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1056:UriPropertiesShouldNotBeStrings")]
-        public string LeftURLSource { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1056:UriPropertiesShouldNotBeStrings")]
-        public string RightURLSource { get; set; }
+        public string PagesSource { get; set; }
+
+        public string OutputFile { get; set; }
+
+        public Mode Mode { get; set; }
 
     }
 }

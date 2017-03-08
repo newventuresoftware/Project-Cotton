@@ -16,20 +16,21 @@ namespace NewVentureSoftware.Cotton.Engine
 
         }
 
-        public static IList<PageData> DownloadPagesFromFile(string pathToFile)
+        public static IList<PageData> DownloadPagesFromFile(string pathToFile, Action<string> progressCallback = null)
         {
             var urls = File.ReadAllLines(pathToFile);
 
-            return DownloadPages(urls);
+            return DownloadPages(urls, progressCallback);
         }
 
-        public static IList<PageData> DownloadPages(IEnumerable<string> pagesToDownload)
+        public static IList<PageData> DownloadPages(IEnumerable<string> pagesToDownload, Action<string> progressCallback = null)
         {
             var pageData = new List<PageData>();
 
             foreach (var url in pagesToDownload)
             {
                 pageData.Add(DownloadPage(url));
+                progressCallback?.Invoke(url);
             }
 
             return pageData;
