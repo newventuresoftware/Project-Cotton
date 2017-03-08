@@ -15,17 +15,17 @@
             if (source == target)
                 return 0;
             
-            var memo = new int[target.Length];
+            var memo = new int[target.Length + 1];
 
-            for (int k = 0; k < target.Length; k++)
+            for (int k = 0; k <= target.Length; k++)
                 memo[k] = k;
 
-            for (int i = 1; i < source.Length; i++)
+            for (int i = 1; i <= source.Length; i++)
             {
-                var currentRowMemo = new int[target.Length];
+                var currentRowMemo = new int[target.Length + 1];
                 currentRowMemo[0] = i;
 
-                for (int k = 1; k < target.Length; k++)
+                for (int k = 1; k <= target.Length; k++)
                 {
                     currentRowMemo[k] = Math.Min(
                         Math.Min(currentRowMemo[k - 1] + 1, memo[k] + 1),
@@ -35,7 +35,7 @@
                 memo = currentRowMemo;
             }
 
-            return memo[target.Length - 1];
+            return memo[target.Length];
         }
     }
 }
